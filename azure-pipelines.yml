@@ -4,7 +4,7 @@
 # https://docs.microsoft.com/azure/devops/pipelines/languages/javascript
 
 trigger:
-- starter
+- master
 
 variables:
 
@@ -67,5 +67,5 @@ stages:
               StartupCommand: 'npm run start'
               ScriptType: 'Inline Script'
               InlineScript: |
-                npm install
-                npm run build --if-present
+                yarn
+                yarn build --if-present
