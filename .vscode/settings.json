@@ -1,0 +1,8 @@
+{
+  "appService.zipIgnorePattern": [
+    "node_modules{,/**}",
+    ".vscode{,/**}"
+  ],
+  "appService.defaultWebAppToDeploy": "/subscriptions/1a7769d9-69f2-4db8-9658-f03eac0c7305/resourceGroups/appsvc_linux_centralus/providers/Microsoft.Web/sites/s3-booking",
+  "appService.deploySubpath": "."
+}
