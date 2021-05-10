@@ -140,6 +140,11 @@ const AppRoutes = [
     component: lazy(() => import('../../views/apps/ecommerce/checkout'))
   },
   {
+    path: '/apps/ecommerce/booking',
+    className: 'ecommerce-application',
+    component: lazy(() => import('../../views/apps/ecommerce/booking'))
+  },
+  {
     path: '/apps/user/list',
     component: lazy(() => import('../../views/apps/user/list'))
   },

@@ -39,10 +39,26 @@ export const deleteWishlistItem = id => {
 }
 
 // ** GET Cart Items
+export const getRooms = () => {
+  return dispatch => {
+    return axios.get('/apps/ecommerce/rooms').then(res => {
+      dispatch({ type: 'GET_ROOMS', data: res.data })
+    })
+  }
+}
+
 export const getCartItems = () => {
   return dispatch => {
     return axios.get('/apps/ecommerce/cart').then(res => {
       dispatch({ type: 'GET_CART', data: res.data })
+    })
+  }
+}
+
+export const getRoomCartItems = () => {
+  return dispatch => {
+    return axios.get('/apps/ecommerce/cart').then(res => {
+      dispatch({ type: 'GET_ROOM_CART', data: res.data })
     })
   }
 }

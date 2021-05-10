@@ -32,8 +32,8 @@ const Context = createContext()
 
 const IntlProviderWrapper = ({ children }) => {
   // ** States
-  const [locale, setLocale] = useState('vi')
-  const [messages, setMessages] = useState(menuMessages['vn'])
+  const [locale, setLocale] = useState('en')
+  const [messages, setMessages] = useState(menuMessages['en'])
 
   // ** Switches Language
   const switchLanguage = lang => {
@@ -43,7 +43,7 @@ const IntlProviderWrapper = ({ children }) => {
 
   return (
     <Context.Provider value={{ locale, switchLanguage }}>
-      <IntlProvider key={locale} locale={locale} messages={messages} defaultLocale='vn'>
+      <IntlProvider key={locale} locale={locale} messages={messages} defaultLocale='en'>
         {children}
       </IntlProvider>
     </Context.Provider>
